@@ -24,14 +24,29 @@ export default class NewsSearch extends Component {
     }) 
   }
 
+  handleChange = ({ target }) => {
+    this.setState({ [target.name]: target.value });
+  }
 
   render() {
     console.log(this.state)
+    
+    const { search, loading, articles } = this.state
+
+    console.log(articles[0])
     return (   
       <> 
         <Search />
-        {this.state.loading ? <LoadingSpinner /> :<ArticleList />}
-        
+        {loading ? <LoadingSpinner /> :<ArticleList />}
+        {articles.map(article => {
+        return (
+          <>
+            <a href="">{article.title}</a>
+            <br/>
+          </>
+        )
+        }
+        )}
       </>
     );
   }
