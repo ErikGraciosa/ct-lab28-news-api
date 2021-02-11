@@ -1,5 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function Search() {
-  return <input placeholder='search here'/>;
-}
+const Search = ({ search, onChange }) => (
+  <>
+    <h1>News Search</h1>
+    <input
+      placeholder="search here"
+      value={search}
+      onChange={onChange}>
+    </input>
+  </>
+);
+
+Search.propTypes = {
+  search: PropTypes.string,
+  onChange: PropTypes.func
+};
+
+export default Search;
