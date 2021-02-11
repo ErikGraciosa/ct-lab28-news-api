@@ -1,5 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function Article() {
-  return <li>Here is one Article Placeholder</li>;
-}
+const Article = ({ title, author, description }) => {
+  return (
+    <div>
+      <p>{title}</p>
+      <p>{author}</p>
+      <p>{description}</p>
+    </div>
+  );
+};
+
+Article.propTypes = {
+  title: PropTypes.string,
+  author: PropTypes.string,
+  description: PropTypes.string
+};
+
+export default Article;
