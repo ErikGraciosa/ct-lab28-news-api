@@ -2,11 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Search = ({ search, onChange }) => (
-  <input
-    placeholder="search here"
-    value={search}
-    onChange={onChange}>
-  </input>
+  <>
+    <h1>News Search</h1>
+    <input
+      placeholder="search here"
+      value={search}
+      onChange={onChange}>
+    </input>
+  </>
 );
 
 Search.propTypes = {
@@ -15,5 +18,3 @@ Search.propTypes = {
 };
 
 export default Search;
-
-

@@ -5,7 +5,7 @@ import LoadingSpinner from '../../components/app/loadingSpinner/Spinner';
 
 export default class NewsSearch extends Component {
   state = {
-    search: 'default',
+    search: '',
     loading: false,
     articles: []
   }
@@ -26,7 +26,7 @@ export default class NewsSearch extends Component {
       const articles = await fetch(`${URL}?q=${this.state.search}&${KEY}`)
         .then(res => res.json())
         .then(json => json.articles);
-      console.log(articles);
+      
       this.setState({
         loading: false,
         articles
@@ -41,16 +41,11 @@ export default class NewsSearch extends Component {
   }
 
   render() {
-
-    console.log(this.state);
-    
     const { search, loading, articles } = this.state;
-
     return (   
       <> 
         <Search search={search} onChange={this.onChange}/>
         {loading ? <LoadingSpinner /> : <ArticleList articles={articles}/>}
-        
       </>
     );
   }

@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleList component renders ArticleList 1`] = `
+<DocumentFragment>
+  <h2>
+    Search Results Below
+  </h2>
+  <hr />
+  <div
+    data-testid="articles"
+  >
+    <div>
+      <p>
+        <b>
+          Article Title:
+        </b>
+         SpaceX SN9 Starship test ends in another fiery inferno
+      </p>
+      <p>
+        <b>
+          Author:
+        </b>
+         Igor Bonifacic
+      </p>
+      <p>
+        <b>
+          Description:
+        </b>
+         Another launch and another unsuccessful landing attempt by one of SpaceX’s Starship spacecraft. After a week of drama involving the FAA, SpaceX tested its latest Starship prototype, SN9, out of its Texas launch facility on Tuesday afternoon.   After the craft…
+      </p>
+    </div>
+    <hr />
+    <div>
+      <p>
+        <b>
+          Article Title:
+        </b>
+         Spin will test scooters with remote parking capabilities this spring
+      </p>
+      <p>
+        <b>
+          Author:
+        </b>
+         Igor Bonifacic
+      </p>
+      <p>
+        <b>
+          Description:
+        </b>
+         If you live in a city where e-scooter companies are allowed to operate, there’s a good chance you’ve stumbled upon a lone scooter far from its counterparts. These can be an annoyance, especially if they’re clogging up a busy sidewalk. Spin wants to address th…
+      </p>
+    </div>
+    <hr />
+  </div>
+</DocumentFragment>
+`;
